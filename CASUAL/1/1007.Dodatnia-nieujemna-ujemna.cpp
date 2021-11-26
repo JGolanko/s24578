@@ -12,10 +12,11 @@ using namespace std;
 
 int main()
 {
-	int a, b, c;
+	int a;
+	cout << "Czy liczba jest Dodatnia, Ujemna czy Nieujemna?";
+	cout << " 1 jeśli liczba jest dodatnia, 0 jeśli liczba jest zerem, - 1 jeśli liczba jest ujemna"
+	cout << "Podaj liczbę: ";
 	cin >> a;
-	cin >> b;
-	cin >> c;
 	if (a > 0)
 	{
 		cout << "1 ";
@@ -29,32 +30,5 @@ int main()
 		cout << "-1 ";
 	}
 
-
-	if (b > 0)
-	{
-		cout << "1 ";
-	}
-	if (b == 0)
-	{
-		cout << "0 ";
-	}
-	if (b < 0)
-	{
-		cout << "-1 ";
-	}
-
-
-	if (c > 0)
-	{
-		cout << "1 ";
-	}
-	if (c == 0)
-	{
-		cout << "0 ";
-	}
-	if (c < 0)
-	{
-		cout << "-1 ";
-	}
 	return 0;
 }

@@ -6,7 +6,8 @@ using namespace std;
 
 int main()
 {
-	int a, b, c;
+	int a, b;
+	cout >> "Mnożenie"
 	cout << "Podaj pierwszą liczbę: ";
 	cin >> a;
 	cout << "Podaj drugą liczbę: ";

@@ -8,9 +8,12 @@ using namespace std;
 int main()
 {
 	int a, b, c;
+	cout << "Największa liczba"
+	cout << "Podaj trzy liczby:"
 	cin >> a;
 	cin >> b;
 	cin >> c;
+	cout << "Największa z podanych liczb to:"
 	if ((a > b) && (a > c))
 	{
 		cout << a;

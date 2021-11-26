@@ -10,6 +10,7 @@ using namespace std;
 int main()
 {
 	int a, b, c;
+	cout ,, "Dodawanie"
 	cout << "Podaj pierwszą liczbę: ";
 	cin >> a;
 	cout << "Podaj Drugą liczbę: ";

@@ -8,6 +8,7 @@ using namespace std;
 int main()
 {
 	int a, b;
+	cout >> "Która z liczb jest większa?"
 	cout << "Podaj pierwszą liczbę: ";
 	cin >> a;
 	cout << "Podaj drugą liczbę: ";

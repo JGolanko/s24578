@@ -9,24 +9,26 @@ using namespace std;
 int main()
 {
 	int a, b;
+	cout << "Relacje między liczbami"
+	cout << "Podaj dwie liczby"
 	cin >> a;
 	cin >> b;
 	if (a == b)
 	{
 		cout << a;
-		cout << " równe ";
+		cout << " Podane liczby są równe ";
 		cout << b;
 	}
 	if(a>b)
 	{
 		cout << a;
-		cout << " większa ";
+		cout << " Pierwsza z liczb jest większa ";
 		cout << b;
 	}
 	if(a<b)
 	{
 		cout << a;
-		cout << " mniejsza ";
+		cout << " Pierwsza z liczb jest mniejsza ";
 		cout << b;
 	}
 
