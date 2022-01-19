@@ -1,6 +1,6 @@
 //INCEPTION
-/*3.2.0.7 Inception Napisz funkcjê max2, która zwraca najwiêksz¹ liczbê z 2
-podanych. Napisz funkcjê max3, która zwraca najwiêksz¹ liczbê z 3 podanych.
+/*3.2.0.7 Inception Napisz funkcjÃª max2, ktÃ³ra zwraca najwiÃªkszÂ¹ liczbÃª z 2
+podanych. Napisz funkcjÃª max3, ktÃ³ra zwraca najwiÃªkszÂ¹ liczbÃª z 3 podanych.
 Funkcja max3 ma do teg*/
 
 #include <iostream>
@@ -8,7 +8,7 @@ using namespace std;
 
 int max2(int a, int b)
 {
-    if (a > b)
+    if (a > b) 
     {
         return a;
     }
@@ -17,20 +17,16 @@ int max2(int a, int b)
         return b;
     }
 }
-
-int max3(int a, int b, int c)
+int max3(int max, int c)
 {
-    if (a > b)
+    if (max < c)
     {
-        if (a > c)
-            return a;
-        else 
-            return c
-
+        return c;
     }
     else
     {
-        return b;
+        return max;
+    }
 }
 int main()
 {
@@ -39,6 +35,8 @@ int main()
     cin >> b;
     cin >> c;
     int max = max2(a, b);
-    int max3(a, b, c);
-    return 0;
+    cout << max<<endl;
+    int maksimum = max3(max, c);
+    cout << maksimum << endl;
+    return 0;  
 }
