@@ -1,9 +1,39 @@
 //SZUKAJ
-/*3.1.0.6 Szukaj Napisz program, który dla tablicy A o rozmiarze n
-bêdzie szukaæ wartoœci zadanej przez u¿ytkownika. Jeœli tablica
-zawiera tak¹ wartoœæ niech program zwróci jej indeks; w przeciwnym
-wypadku niech zwróci -1.*/
+/*3.1.0.6 Szukaj Napisz program, ktÃ³ry dla tablicy A o rozmiarze n
+bÄ™dzie szukaÄ‡ wartoÅ›ci zadanej przez uÅ¼ytkownika. JeÅ›li tablica
+zawiera takÄ… wartoÅ›Ä‡ niech program zwrÃ³ci jej indeks; w przeciwnym
+wypadku niech zwrÃ³ci -1.*/
 
 #include <iostream>
 using namespace std;
 
+int search(int n, int x)
+{
+	int A[10000];
+	int b;
+	for (int i = 0; i < n; i++)
+	{
+		cout << "A[" << i << "]:";
+		cin >> A[i];
+	}
+	for (int i = 0; i < n; i++)
+	{
+		if (A[i] == x)
+		{
+			b = i;
+			return b;
+		}
+	}
+	return -1;
+}
+
+int main()
+{
+	int n, x;
+	cout << "Ilosc elentow tablicy A: ";
+	cin >> n;
+	cout << "Szukana wartosc: ";
+	cin >> x;
+	cout << search(n, x) << endl;
+	return 0;
+}
