@@ -1,5 +1,5 @@
 //TROJKAT
-/*2.0.0.12 Rysowanie figury (trójk¹t) Wykorzystuj¹c dowoln¹ pêtlê napisz program, który pobierze z wiersza poleceñ wymiary trójk¹ta i narysuje go. Wynik wydrukuj na std::cout. Przyk³adowe
+/*2.0.0.12 Rysowanie figury (trÃ³jkÄ…t) WykorzystujÄ…c dowolnÄ… pÄ™tlÄ™ napisz program, ktÃ³ry pobierze z wiersza poleceÅ„ wymiary trÃ³jkÄ…ta i narysuje go. Wynik wydrukuj na std::cout. PrzykÅ‚adowe
 uruchomienie na listingu 9.*/
 
 #include <iostream>
@@ -10,15 +10,18 @@ int main()
 {
 
     int h;
-    cout << "Podaj wysokoœæ trójk¹ta h ";
-    cin >> a;
+    string b;
+    cout << "Podaj wysokoÅ›Ä‡ trÃ³jkÄ…ta h ";
+    cin >> h;
 
-    for (int i = 1; i <= h; i++)
+    for (int i = h; i > 0; i--)
     {
-        for (int j = 1; j <= i; j++)
-        {
-            cout << "*";
+   b = b + "*";
+            cout << b ;
+   cout<<endl;
+           
         }
+cout << endl;
 
     return 0;
 }
