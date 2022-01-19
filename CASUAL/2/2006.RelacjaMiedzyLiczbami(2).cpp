@@ -1,6 +1,6 @@
-//RELACJA MIÊDZY LICZBAMI 2
-/*2.0.0.6 Relacja miêdzy liczbami (2) Rozwiñ program z zadania 1.0.0.6 tak, ¿eby porównywa³
-wiêcej liczb naraz, tak jak na listingu 4. Wynik wydrukuj na std::cout*/
+//RELACJA MIÃŠDZY LICZBAMI 2
+/*2.0.0.6 Relacja miÃªdzy liczbami (2) RozwiÃ± program z zadania 1.0.0.6 tak, Â¿eby porÃ³wnywaÂ³
+wiÃªcej liczb naraz, tak jak na listingu 4. Wynik wydrukuj na std::cout*/
 
 #include <iostream>
 #include <string>
@@ -44,4 +44,5 @@ int main()
     cout << "Podaj s: ";
     cin >> s;
     loop(s);
-    return
+    return 0;
+}
