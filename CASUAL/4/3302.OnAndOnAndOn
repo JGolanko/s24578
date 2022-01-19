@@ -1,0 +1,39 @@
+/*3.3.0.2 OnAndOnAndOn Napisz program, który pozwala na
+wielokrotne obliczenie pojemności dowolnego stożka
+ściętego. Zadbaj, aby program nie przerwał swojego
+działania przy niepoprawnych danych.*/
+
+#include <iostream>
+using namespace std;
+
+void size(int H, int r, int R)
+{
+
+	double objetosc = (3.14 * H * (r * r + r * R + R * R)) / 3;
+
+		cout << "Objetosc stożka wynosi: " << objetosc << "\n";
+}
+
+int main()
+{
+	int H, r, R;
+
+	do
+	{
+		cout << "Podaj wysokosc H: ";
+		cin >> H;
+		cout << "Podaj promien r: ";
+		cin >> r;
+		cout << "Podaj promien R: ";
+		cin >> R;
+
+		if (H > 0 && r > 0 && R > 0)
+			size(H, r, R);
+		else if (cin)
+		{
+			cout << "Podano błędnoe dane \n";
+			return 0;
+		}
+	} while (H != 0 || r != 0 || R != 0);
+	return 0;
+}
