@@ -1,22 +1,24 @@
 //ODWROCONY TROJKAT
-/*2.0.0.13 Rysowanie figury (odwrócony trójk¹t) Wykorzystuj¹c dowoln¹ pêtlê napisz program, który pobierze z wiersza poleceñ wymiary „odwróconego trójk¹ta” (tj. niech wierzcho³ek bêdzie
+/*2.0.0.13 Rysowanie figury (odwrÃ³cony trÃ³jkÄ…t) WykorzystujÄ…c dowolnÄ… pÄ™tlÄ™ napisz program, ktÃ³ry pobierze z wiersza poleceÅ„ wymiary â€odwrÃ³conego trÃ³jkÄ…taâ€ (tj. niech wierzchoÅ‚ek bÄ™dzie
 na dole, patrz listing 10) i narysuje go. Wynik wydrukuj na std::cout*/
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int h;
+    int h, a;
 
-    cout << "Podaj wysokoœæ trójk¹ta h ";
-    cin >> h;
+    cout << "Podaj wysokosc trÃ³jkÄ…ta: " ;
+    cin >> a;
 
     for (int i = a; i >= 1; --i)
     {
         for (int j = 1; j <= i; ++j)
         {
-            cout << "* ";
+            cout <<"* ";
         }
+cout<<endl;
     }
 
     return 0;
+}
