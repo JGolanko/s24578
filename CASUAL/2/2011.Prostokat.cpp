@@ -1,6 +1,6 @@
-//PROSTOK¥T
-/*2.0.0.11 Rysowanie figury (prostok¹t) Wykorzystuj¹c dowoln¹ pêtlê napisz program, który
-pobierze z wiersza poleceñ wymiary prostok¹ta i narysuje go. Wynik wydrukuj na std::cout. Przyk³adowe uruchomienie na listingu 8.*/
+//PROSTOKÄ½T
+/*2.0.0.11 Rysowanie figury (prostokÅ¡t) WykorzystujÅ¡c dowolnÅ¡ pÄ™tlÄ™ napisz program, ktÃ³ry
+pobierze z wiersza poleceÅ„ wymiary prostokÅ¡ta i narysuje go. Wynik wydrukuj na std::cout. PrzykÅ‚adowe uruchomienie na listingu 8.*/
 #include <iostream>
 
 using namespace std;
@@ -16,8 +16,11 @@ int main()
     {
         for (int i = b; i > 0; i--)
         {
-            cout << "*";
+            cout << "* ";
+
         }
+
+            cout << endl;
     }
     return 0;
 }
