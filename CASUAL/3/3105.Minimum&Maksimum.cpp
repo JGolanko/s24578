@@ -1,7 +1,41 @@
 //MINIMUM I MAKSIMUM
-/*3.1.0.5 Minimum & Maksimum Napisz program, który dla tablicy A o
-rozmiarze n, zwróci indeks najmniejszej i indeks najwiêkszej wartoœci
+/*3.1.0.5 Minimum & Maksimum Napisz program, ktÃ³ry dla tablicy A o
+rozmiarze n, zwrÃ³ci indeks najmniejszej i indeks najwiÄ™kszej wartoÅ›ci
 w tablicy A.*/
+
 #include <iostream>
+#include <string>
 using namespace std;
 
+
+	int main()
+{
+	int a, najm, najw;
+		cout << "Podaj ile chcesz wpisaÄ‡ elementÃ³w do tablicy A ";
+		cin >> a;
+
+	int const b = 100;
+	int A[b] = {};
+
+	for (int i = 0; i < a; i++) {
+		cout << "Podaj " << i + 1 << " element tablicy ";
+		cin >> A[i];
+	}
+	int min = 99999, max = -1;
+	for (int i = 0; i < a; i++) {
+		if (A[i] < min) {
+			min = A[i];
+			najm = i;
+		}
+		if (A[i] > max) {
+			max = A[i];
+			najw = i;
+		}
+	}
+
+		cout << "indeks najmniejszej liczby: " << najm << "\n";
+		cout << "indeks najwiÄ™kszaej liczby: " << najw << "\n";
+		cout << "\n";
+
+	return 0;
+} 
